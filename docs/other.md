@@ -1,4 +1,4 @@
-# 待分类
+# 其他
 
 ## 自如
 
@@ -329,6 +329,8 @@ board 和 build 可在[这里](http://api.ineal.me/tss/status)查看
 
 <Route name="作者" author="xyqfer" example="/cyzone/author/1225562" path="/cyzone/author/:id" :paramsDesc="['作者 id']"/>
 
+<Route name="标签" author="LogicJake" example="/cyzone/label/创业邦周报" path="/cyzone/label/:name" :paramsDesc="['标签名称']"/>
+
 ## 惠誉评级
 
 <Route name="板块信息" author="LogicJake" example="/fitchratings/site/economics" path="/fitchratings/site/:type" :paramsDesc="['板块名称，在网址 site 后面']"/>
@@ -483,3 +485,11 @@ type 为 all 时，category 参数不支持 cost 和 free
 ### checkee.info
 
 <Route name="美国签证 check 动态" author="lalxyy" example="/checkee/2019-03" path="/checkee/:month" :paramsDesc="['签证被 check 的年份-月份，如 2019-03']" />
+
+### 电商在线
+
+<Route name="电商在线" author="LogicJake" example="/imaijia/category/xls" path="/imaijia/category/:category" :paramsDesc="['类别id，可在 URL 中找到']" />
+
+### 马良行
+
+<Route name="马良行" author="junfengP" example="/mlhang" path="/mlhang" />
