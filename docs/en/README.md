@@ -15,12 +15,12 @@ RSSHub is a lightweight and extensible RSS feed aggregator, it's able to generat
 
 ### Special Sponsors
 
-<a href="https://rixcloud.app/rsshub" target="_blank"><img width="240px" src="https://i.imgur.com/qRP0eMg.png"></a>
+<a href="https://rixcloud.app/rsshub" target="_blank"><img height="60px" src="https://i.imgur.com/TrgP3S1.png"></a><a href="https://apps.apple.com/cn/app/%E5%BF%AB%E7%9F%A5-%E8%AE%A9%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%9B%B4%E9%AB%98%E6%95%88/id1465578855" target="_blank" style="margin-left: 10px;"><img height="60px" src="https://i.imgur.com/YjqwaKE.png"></a><a href="https://partner.lizhi.io/rsshub/office_365_share" target="_blank" style="margin-left: 10px;"><img height="60px" src="https://i.imgur.com/GyYi9MI.png"></a>
 
 ### Sponsors
 
-| [Eternal Proxy](https://proxy.eternalstudio.cn/?from=rsshub) | [Liuyang](https://github.com/lingllting) | [Sayori Studio](https://t.me/SayoriStudio) | 匿名 | [Sion Kazama](https://blog.sion.moe) |
-| :----------------------------------------------------------: | :--------------------------------------: | :----------------------------------------: | :--: | :----------------------------------: |
+| [Eternal Proxy](https://proxy.eternalstudio.cn/?from=rsshub) | [Liuyang](https://github.com/lingllting) | [Sayori Studio](https://t.me/SayoriStudio) | Anonymous | [Sion Kazama](https://blog.sion.moe) |
+| :----------------------------------------------------------: | :--------------------------------------: | :----------------------------------------: | :-------: | :----------------------------------: |
 
 
 [![](https://opencollective.com/static/images/become_sponsor.svg)](/support/)
@@ -55,7 +55,7 @@ Logo designed by [sheldonrrr](https://dribbble.com/sheldonrrr)
 
 ::: tip
 
-Free feel to test the [demo instance](https://rsshub.app), the cache expiry time is set to 10 minutes.
+Feel free to test the [demo instance](https://rsshub.app), the cache expiry time is set to 10 minutes.
 
 :::
 
@@ -651,3 +651,9 @@ Supported sub-sites：
 #### Poems
 
 <RouteEn author="HenryQW" example="/allpoetry/newest" path="/allpoetry/:order?" :paramsDesc="['order by type, `best` or `newest`, default to `best`']"/>
+
+## aptonic
+
+### New Dropzone Actions
+
+<RouteEn author="HenryQW" example="/aptonic/action" path="/aptonic/action"/>
