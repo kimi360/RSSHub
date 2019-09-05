@@ -32,6 +32,12 @@ pageClass: routes
 
 <Route author="HenryQW" example="/appstore/gofans" path="/appstore/gofans"/>
 
+## aptonic
+
+### 新的 Dropzone 动作
+
+<Route author="HenryQW" example="/aptonic/action" path="/aptonic/action"/>
+
 ## Bugly SDK
 
 ### 更新日志
@@ -114,7 +120,7 @@ pageClass: routes
 
 ### 有新路由啦
 
-<Route author="DIYgod" example="/rsshub/rss" path="/rsshub/rss"/>
+<Route author="DIYgod" example="/rsshub/rss" path="/rsshub/rss" radar="1"/>
 
 ## Thunderbird
 
