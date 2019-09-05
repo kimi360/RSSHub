@@ -298,6 +298,12 @@ Use environment variables is recommended to avoid conflicts during upgrade.
 
 `PROXY_URL_REGEX`: regex for url of enabling proxy, default to `.*`
 
+`NODE_NAME`: node name, used for load balancing, identify current node
+
+`PUPPETEER_WS_ENDPOINT`: Browser websocket endpoint which can be used as an argument to puppeteer.connect, refer to [browserWSEndpoint](https://pptr.dev/#?product=Puppeteer&version=v1.14.0&show=api-browserwsendpoint)
+
+`SENTRY`: [Sentry](https://sentry.io) dsn, used for error tracking
+
 ### User Authentication
 
 Routes in `protected_route.js` will be protected using HTTP Basic Authentication.
@@ -335,6 +341,10 @@ When adding feeds using RSS readers with HTTP Basic Authentication support, auth
 -   `github`: [Access Token application](https://github.com/settings/tokens)
 
     -   `GITHUB_ACCESS_TOKEN`: GitHub Access Token
+
+-   `mail`:
+
+    -   `EMAIL_CONFIG_{email}`: Mail setting, replace `{email}` with email account, replace `@` in email account with `.`, like `EMAIL_CONFIG_xxx.qq.com`. the value format is `password=password&host=server&port=port`, like `password=123456&host=imap.qq.com&port=993`
 
 ### Access Control
 

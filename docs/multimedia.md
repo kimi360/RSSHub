@@ -89,22 +89,30 @@ pageClass: routes
 
 ## Mp4Ba
 
+### 影视分类
+
+<Route author="SettingDust wolfyu1991"  example="/mp4ba/6" path="/mp4ba/:param" :paramsDesc="['类型']" supportBT="1"/>
+
 **类型参考这里**
-| 1 | 2 | 3 | 4 |
-| - | - | - | - |
-| 电影 | 连续剧 | 综艺 | 动画 |
+| 电影 | 连续剧 | 动画 | 综艺 | 纪录片 |
+| ---- | ------ | ---- | ---- | ------ |
+| 6 | 7 | 15 | 20 | 24 |
 
-| 5      | 6      | 7      | 8      | 9      |
-| ------ | ------ | ------ | ------ | ------ |
 | 动作片 | 喜剧片 | 爱情片 | 科幻片 | 恐怖片 |
+| ------ | ------ | ------ | ------ | ------ |
+| 8      | 9      | 10     | 11     | 12     |
 
-| 10     | 11     | 12     | 13     | 14     | 15     |
-| ------ | ------ | ------ | ------ | ------ | ------ |
 | 剧情片 | 战争片 | 国产剧 | 港台剧 | 日韩剧 | 欧美剧 |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 13     | 14     | 16     | 17     | 18     | 19     |
 
-### 资源
+</Route>
 
-<Route author="SettingDust"  example="/mp4ba/1" path="/mp4ba/:param" :paramsDesc="['类型/关键字']" supportBT="1"/>
+### 影视搜索
+
+<Route author="wolfyu1991"  example="/mp4ba/复仇者联盟" path="/mp4ba/:keyword" :paramsDesc="['搜索关键字']" supportBT="1"/>
+
+</Route>
 
 ## rs05 人生 05 电影
 
@@ -143,6 +151,10 @@ pageClass: routes
 见 [#youtube](/social-media.html#youtube)
 
 ## 爱奇艺
+
+### 用户视频
+
+<Route author="talengu" example="/iqiyi/user/video/2289191062" path="/iqiyi/user/video/:uid" :paramsDesc="['用户名']" />
 
 ### 动漫
 
@@ -206,6 +218,12 @@ pageClass: routes
 
 <Route author="Songkeys" example="/gaoqing/latest" path="/gaoqing/latest"/>
 
+## 故事 FM
+
+### 首页
+
+<Route author="sanmmm" example="/storyfm/index" path="/storyfm/index"/>
+
 ## 开眼
 
 ### 每日精选
@@ -221,6 +239,18 @@ pageClass: routes
 ### 即将上映
 
 <Route author="HenryQW" example="/maoyan/upcoming" path="/maoyan/upcoming" />
+
+## 奈菲影视
+
+### 分区
+
+<Route author="AngUOI" example="/nfmovies/0" path="/nfmovies/:id?" :paramsDesc="['子版块 id, 为空默认首页']">
+
+| 首页 | 电影 | 电视剧 | 综艺 | 动漫 | 奈菲独家 |
+| ---- | ---- | ------ | ---- | ---- | -------- |
+| 0    | 1    | 2      | 3    | 4    | 5        |
+
+</Route>
 
 ## 柠檬 私房歌 (ningmeng.name)
 
