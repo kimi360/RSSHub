@@ -5,7 +5,6 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "node lib/index.js",
-    "build": "npm install",
     "dev": "cross-env NODE_ENV=dev nodemon --inspect lib/index.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
