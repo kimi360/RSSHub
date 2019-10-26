@@ -104,6 +104,16 @@ pageClass: routes
 
 <Route author="RicardoMing" example="/bupt/grs" path="/bupt/grs" />
 
+### 信息门户
+
+<Route author="RicardoMing" example="/bupt/portal" path="/bupt/portal" />
+
+::: warning 注意
+信息门户的通知需要通过统一身份认证后才能获取，因此需要在校园网或校园 VPN 环境下自建。
+
+设置环境变量: `BUPT_USERNAME` 用户名为学号， `BUPT_PASSWORD` 统一身份认证的密码。
+:::
+
 ## 常州大学
 
 ### 教务处
@@ -275,6 +285,20 @@ xskb1 对应 http://www.auto.uestc.edu.cn/index/xskb1.htm
 
 <Route author="Xiaotouming" example="/gdoujwc" path="/gdoujwc"/>
 
+## 桂林电子科技大学
+
+### 新闻资讯
+
+<Route author="cssxsh" example="/guet/xwzx/xykx" path="/guet/xwzx/:type" :paramsDesc="['资讯类型，如下表']">
+
+| 桂电要闻 | 文明校园建设 | 桂电新闻 | 校园快讯 | 学院动态 | 媒体桂电 | 通知公告 | 招标公示 | 学术活动 |
+| -------- | ------------ | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| gdyw     | wmxyjs       | gdxw     | xykx     | xydt     | mtgd     | tzgg     | zbgs     | xshd     |
+
+注 1: 不要吐槽拼音缩写，缩写原本的 URL 构成就这样。
+
+</Route>
+
 ## 哈尔滨工程大学
 
 ### 本科生院工作通知
@@ -409,6 +433,12 @@ category 列表：
 ### 人工智能和自动化学院新闻
 
 <Route author="RayHY" example="/hust/aia/news" path="/universities/hust/aia/news" />
+
+## 华中师范大学
+
+### 就业信息
+
+<Route author="jackyu1996" example="/ccnu/career" path="/universities/ccnu/career" />
 
 ## 江南大学
 
