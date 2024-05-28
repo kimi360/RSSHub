@@ -5,12 +5,13 @@ import got from '@/utils/got'; // 自订的 got
 import { load } from 'cheerio'; // 可以使用类似 jQuery 的 API HTML 解析器
 import { parseDate } from '@/utils/parse-date';
 import { config } from '@/config';
+import ConfigNotFoundError from '@/errors/types/config-not-found';
 
 const baseUrl = 'https://sehuatang.org/';
 
 export const route: Route = {
     path: '/user/:uid',
-    categories: ['multimedia'],
+    categories: ['multimedia', 'popular'],
     example: '/sehuatang/user/411096',
     parameters: { uid: '用户 uid, 可在用户主页 URL 中找到' },
     features: {
@@ -33,7 +34,7 @@ export const route: Route = {
 
 async function handler(ctx) {
     if (!config.sehuatang.cookie) {
-        throw new Error('Sehuatang RSS is disabled due to the lack of <a href="https://docs.rsshub.app/install/#pei-zhi-bu-fen-rss-mo-kuai-pei-zhi">relevant config</a>');
+        throw new ConfigNotFoundError('Sehuatang RSS is disabled due to the lack of <a href="https://docs.rsshub.app/deploy/config#route-specific-configurations">relevant config</a>');
     }
     // 从Url参数中获取uid
     const uid = ctx.req.param('uid');
